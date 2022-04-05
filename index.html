@@ -91,38 +91,43 @@
 
 <!-- HERO -->
     <div id="hero">
+        <div class="title">
+        <h1 class="hero_headline" data-aos="fade-out" data-aos-anchor-placement="top-center">Farming</h1>
+        </div>
         <video loop muted autoplay preload="auto" data-aos="fade-in">
             <source src="assets/video/farming.mp4" type="video/mp4">  
         </video>
-        <a href="#panelCont"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></a>
     </div>
-    <div id="introCont" data-aos="fade-right">
-        <h1>Headline</h1>
-        <p>This is like some stuff that relates to the headline and tells you some cool stuff about Athens farming or whatever. But yeah this is where the text will go and this is just the filler information so I'm just gonna talk in circles until this fills the page.</p>
+    
+    <div id="introCont">
+        <h1 data-aos="fade-left">Headline</h1>
+        <p data-aos="fade-left">This is like some stuff that relates to the headline and tells you some cool stuff about Athens farming or whatever. But yeah this is where the text will go and this is just the filler information so I'm just gonna talk in circles until this fills the page.</p>
     </div><!-- #introCont -->
     
-<div id="panelCont" data-aos="fade-up">
-    <a href="timber-landing.html" class="panel" style="background-image: url(assets/img/hay.jpg);">
+<div id="content">
+    <div id="panelCont" data-aos="fade-up">
+    <a href="hay-landing.html" class="panel" style="background-image: url(assets/img/hay.jpg);">
         <div class="cardText">
-            <h2>Hay</h2>
+            <h2 data-aos="fade-up">Hay</h2>
             <!--<p>other description</p>-->
         </div>
     </a>
 
     <a href="#" class="panel" style="background-image: url(assets/img/pawpaw.jpg);">
         <div class="cardText">
-            <h2>PawPaw</h2>
+            <h2 data-aos="fade-up">PawPaw</h2>
             <!--<p>other description</p>-->
         </div>
     </a>
 
-    <a href="#" class="panel" style="background-image: url(assets/img/mushroom.jpg);">
+    <a href="vegetable-landing.html" class="panel" style="background-image: url(assets/img/vegetable.jpg);">
         <div class="cardText">
-            <h2>Mushroom</h2>
+            <h2 data-aos="fade-up">Vegetable</h2>
             <!--<p>other description</p>-->
         </div>
     </a>
-</div> <!-- #panelCont -->
+</div> 
+    </div><!-- #panelCont -->
 
 <div id="footer">
 </div>
@@ -165,10 +170,14 @@
     subLink3.addEventListener("click", () => {
       menu.classList.remove('active');
     });
+    
+    AOS.init()
 </script>
     
+  <!-- AOS JS -->
+  <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+    
   <!-- Vendor JS Files -->
-  <script src="vendor/aos/aos.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/glightbox/js/glightbox.min.js"></script>
   <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
