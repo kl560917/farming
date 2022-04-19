@@ -557,7 +557,7 @@ section {
 }
 
 .pull-quote-bg{
-    background-image:url("assets/img/hay/haybackground.jpg");
+    background-image:url("assets/img/hay/hay-background.jpg");
     min-height: 200px;
     background-attachment:fixed;
     background-position: center;
